@@ -25,6 +25,9 @@
     <style>
       .font-sora {
         font-family: "Sora", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1rem;
       }
     </style>
 
@@ -38,6 +41,8 @@
     <style>
       .font-adlam {
         font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
       }
     </style>
     <style>
@@ -73,10 +78,14 @@
   <body>
     <header>
       <!-- navbar section -->
-      <div class="navbar bg-[#FFF9F4] font-sora md:px-20 space-x-2">
-        <img src="c1-assets/logo-header.png" alt="" />
-        <div class="navbar-start">
-          <a class="text-xl">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+      <div class="navbar bg-[#FFF9F4] font-sora md:px-20">
+        <div class="navbar-start space-x-2">
+          <img src="c1-assets/logo-header.png" alt="" />
+          <div class="hidden sm:block">
+            <a class="text-xl"
+              >Browse<span class="text-[#FFDC26]">4</span>Pets</a
+            >
+          </div>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -101,6 +110,36 @@
           </div>
         </div>
       </div>
+      <div class="block md:hidden">
+        <hr />
+      </div>
+      <!-- banner section -->
+      <section class="px-2 py-5 md:px-20 md:py-20">
+        <div class="relative">
+          <!-- Text -->
+          <div
+            class="md:absolute Md:top-0 md:left-0 md:transform-translate-x-2 md:-translate-y-1 text-xl font-bold"
+          >
+            <h1 class="md:text-5xl font-adlam">
+              Pamper Your Pet, <br />
+              Because They Deserve <br />
+              the Best
+            </h1>
+            <p class="py-6 font-sora">
+              Discover a world of treats, toys, and essentials handpicked for
+              <br />
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <button class="btn btn-warning bg-[#FFDC26] border-none text-lg">
+              Find a pet
+            </button>
+          </div>
+          <!-- image -->
+          <div>
+            <img src="c1-assets/cat-big.png" class="rounded-lg object-cover" />
+          </div>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
