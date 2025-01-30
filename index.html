@@ -10,6 +10,7 @@
 
     <!-- font awesome -->
     <script
+      <script
       src="https://kit.fontawesome.com/5858bd8c6d.js"
       crossorigin="anonymous"
     ></script>
@@ -39,6 +40,12 @@
         font-family: "ADLaM Display", serif;
       }
     </style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 
     <!-- Tailwind Cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,8 +69,39 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <header></header>
+    <header>
+      <!-- navbar section -->
+      <div class="navbar bg-[#FFF9F4] font-sora md:px-20 space-x-2">
+        <img src="c1-assets/logo-header.png" alt="" />
+        <div class="navbar-start">
+          <a class="text-xl">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Find a Pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-5 hidden md:flex">
+          <div class="space-x-2">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="space-x-1">
+            <a class="btn btn-outline border-[#FFDC26]">Login</a>
+            <a class="btn btn-warning bg-[#FFDC26] border-none">Register</a>
+          </div>
+        </div>
+        <div class="flex ml-auto">
+          <div class="block md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
